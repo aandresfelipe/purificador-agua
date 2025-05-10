@@ -262,12 +262,12 @@ p{
 
     .nav_toogle{
     width: 10px;
-    height: 10px;
+    height: 20px;
     background-image: var(--icon-toogle-menu);
     background-size: cover;
     cursor: pointer;
     transition: background-image .5s;
-    margin-top: 10px;
+    margin-top: 5px;
     display: block;
     
     }
@@ -278,5 +278,5 @@ p{
     display: none;
   
 }
-    
+}
 

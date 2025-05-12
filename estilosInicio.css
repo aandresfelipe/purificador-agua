@@ -9,15 +9,25 @@
 body{
     text-align: center;
     font-family: sans-serif;
-    background-color: #f0f0f0; 
+    background-color: #adadad;
+    background: linear-gradient(to right, #06213bbe 0%, rgba(0, 0, 0, 0) 20%,
+     rgba(0, 0, 0, 0) 80%, #06213bbe 100%);
 }
 
 p{
     margin-bottom: 40px;
-    font-size: 20px;
+    font-size: 22px;
     color: #000000;
-    padding: 0 100px;
+    padding: 20 80px;
     align-items: center;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+.objetive{
+    font-size: 25px;
+    margin-top: 50px;
+    font-weight: 530;
 }
 
 .head {
@@ -38,6 +48,86 @@ p{
     border: 2px solid #171717;
     font-size: 35px;
     margin-top: 2px;
+}
+
+.header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.header {
+    height: 70vh !important;
+    background: url(img/Agua.jpg) no-repeat center center;
+    background-size: cover;
+    margin-bottom: 60px;
+    
+}
+
+.header p{
+    font-weight: 400;
+    font-size: 23px;
+    margin-top: 50px;
+    background-color: #ffffff79;  
+    padding: 15px 20px;         
+    border-radius: 10px;        
+    max-width: 600px;           
+    margin: 20px auto;          
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795);  
+}
+
+.title{
+    font-size: 50px;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 50px;
+    margin-left: 30px;
+    text-shadow: #292929;
+    box-shadow: #292929;
+}
+
+.title2{
+    font-weight: 550;
+    font-size: 30px;
+    margin-top: 600px;
+    margin-right: 200px;
+    background-color: #7e7e7e79;  
+    padding: 7px 20px;         
+    border-radius: 10px;        
+    max-width: 600px;           
+    margin: 20px auto;          
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795); 
+    color: #ffffff;
+}
+
+.title3{
+    font-weight: 550;
+    font-size: 30px;
+    margin-top: 300px;
+    margin-right: 200px;
+    background-color: #7e7e7e79;  
+    padding: 7px 20px;         
+    border-radius: 10px;        
+    max-width: 600px;           
+    margin: 20px auto;          
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795); 
+    color: #ffffff;
+}
+
+.title3 p{
+    font-size:10px;
+}
+
+.img img{
+     width: 80%;
+  max-width: 600px;
+  border-radius: 20px;
+  margin: 30px auto;
+  display: block;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.4);
+  align-items: center;
+  margin-bottom: 70px;
 }
 
 .nav_list{
@@ -98,7 +188,38 @@ p{
     background: #13abe7da;
 }
 
+
+
 @media (max-width: 769px){
+
+    p{
+    margin-bottom: 40px;
+    font-size: 22px;
+    color: #000000;
+    padding: 20px;
+    align-items: center;
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+
+    .title{
+        font-size: 30px;
+        margin-right: 30px;
+        margin-left: 20px;
+    }
+
+    .header p{
+    font-weight: 400;
+    font-size: 17px;
+    margin-top: 100px;
+    margin-right: 30px;
+    background-color: #ffffff79;  
+    padding: 7px 20px;         
+    border-radius: 10px;        
+    max-width: 500px;                     
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795); 
+    }
     
     .nav{
     background-color: #101010;

@@ -90,14 +90,47 @@ body{
     padding: 10px 20px;
 }
 
+/* Compatibilidad Celular */
 @media (max-width: 769px){
     
+    .title{
+        margin-bottom: 0;
+        font-size: 35px;
+    }
+
+    .sau{
+        height: 270vh;
+        padding: 4rem;
+    }
+
+    .box-container .box{
+    height: 16rem;
+    width: 9rem;
+    background: #fefefe;
+    text-align: center;
+    border-radius: 1rem ;
+    box-shadow: 0 .3rem 5rem rgba(3, 167, 255, 0.105);
+    margin: 2rem;
+}
+
+    p{
+        padding: 0 10px;
+        font-size: 17px;
+    }
+
+    .header p{
+    color: rgba(0, 0, 0, 0.63);
+    font-weight: 600;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
     .nav{
-    background-color: #101010;
+    background-color: #ffffff;
     }
 
     .nav_container{
-    background: #171717;
+    background: #ffffff;
     width: min(90%, 1200px);
     margin: 0 auto;
     display: flex;
@@ -139,13 +172,14 @@ body{
     }
 
     .nav_toogle{
-    width: 10px;
+    width: 20px;
     height: 20px;
     background-image: var(--icon-toogle-menu);
     background-size: cover;
     cursor: pointer;
     transition: background-image .5s;
     margin-top: 5px;
+    margin-right: 20px;
     display: block;
     
     }

@@ -8,10 +8,8 @@
 
 body{
     text-align: center;
-    font-family: sans-serif;
-    background-color: #adadad;
-    background: linear-gradient(to right, #06213bbe 0%, rgba(0, 0, 0, 0) 20%,
-     rgba(0, 0, 0, 0) 80%, #06213bbe 100%);
+    font-family: "Lato", sans-serif;
+    background-color: #f0f0f0;
 }
 
 p{
@@ -35,19 +33,23 @@ p{
     align-items: center;
     justify-content: space-between;
     height: 63px;
-    background-color: #171717;
+    background-color: #ffffff;
     position: fixed;
-    width: 100%;
+    width: 96.4%;
     z-index: 100;
+    margin-right: 0.625rem;
+    margin-left: 1.25rem;
+    border-top: 6.25rem;
 }
 
 .head .logo .btn{
     display: flex;
-    background: #171717;
+    background: #ffffff;
     padding: 7px 26px;
-    border: 2px solid #171717;
+    border: 2px solid #ffffff;
     font-size: 35px;
     margin-top: 2px;
+    color: #101010;
 }
 
 .header {
@@ -59,32 +61,36 @@ p{
 
 .header {
     height: 70vh !important;
-    background: url(img/Agua.jpg) no-repeat center center;
+    background: url(img/FONDo.jpg) no-repeat center center;
     background-size: cover;
     margin-bottom: 60px;
-    
+    margin-left: 20px;
+    margin-right: 20px;
 }
 
 .header p{
     font-weight: 400;
     font-size: 23px;
     margin-top: 50px;
-    background-color: #ffffff79;  
+    background-color: #ffffff4f;  
     padding: 15px 20px;         
     border-radius: 10px;        
     max-width: 600px;           
-    margin: 20px auto;          
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795);  
+    margin: 20px auto; 
+    margin-right: 20px;         
+    
 }
 
 .title{
-    font-size: 50px;
-    color: #ffffff;
+    font-size: 80px;
+    font-family: "Lato", sans-serif;
+    color: #000000;
     text-align: center;
     margin-top: 50px;
-    margin-left: 30px;
     text-shadow: #292929;
     box-shadow: #292929;
+    margin-left: 72px;
+    margin-right: 100px;
 }
 
 .title2{
@@ -92,12 +98,12 @@ p{
     font-size: 30px;
     margin-top: 600px;
     margin-right: 200px;
-    background-color: #7e7e7e79;  
+    background-color: #31bef5a7;  
     padding: 7px 20px;         
     border-radius: 10px;        
     max-width: 600px;           
     margin: 20px auto;          
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795); 
+    box-shadow: 0 4px 10px rgba(98, 232, 255, 0.359); 
     color: #ffffff;
 }
 
@@ -106,17 +112,17 @@ p{
     font-size: 30px;
     margin-top: 300px;
     margin-right: 200px;
-    background-color: #7e7e7e79;  
+    background-color: #31bef5a7;  
     padding: 7px 20px;         
     border-radius: 10px;        
     max-width: 600px;           
     margin: 20px auto;          
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.795); 
+    box-shadow: 0 4px 10px rgba(98, 232, 255, 0.359); 
     color: #ffffff;
 }
 
 .title3 p{
-    font-size:10px;
+    font-size:100px;
 }
 
 .img img{
@@ -134,48 +140,48 @@ p{
     display: flex;
     list-style: none;
     margin: 0;
-    padding: 5px 5px;
+    padding: 0.313rem 0.313rem;
 }
 
 .nav_item{
-    margin-right: 30px;
+    margin-right: 1.875rem;
 
 }
 
 .nav_link{
     text-decoration: none;
-    color: white;
+    color: rgb(0, 0, 0);
     font-weight: sans-serif;
-    font-size: 15px;
+    font-size: 1rem;
     text-transform: uppercase;
     display: block;
-    padding: 7px 15px;
+    padding: 0.438rem 2.188rem;
     background-color: transparent;
-    border-radius: 5px;
+    border-radius: 0.313rem;
     transition: background-color 0.3s, box-shadow 0.3s;
 
 }
 
 .nav a:hover{
-    background-color: #3f3d3d;
+    background-color: #cecece;
     box-shadow: 0 0 12px rgba(223, 226, 230, 0.6);
 }
 
 .nav_toogle{
     display: none;
     font-size: 24px;
-    color: white;
+    color: rgb(255, 255, 255);
     cursor: pointer;
     position: absolute;
-    top: 20px;
-    right: 20px;
+    top: 1.25rem;
+    right: 1.25rem;
     z-index: 900;
     
 }
 
 .nav_container{
-    background-color: #171717; ;
-    padding: 10px 20px;
+    background-color: #ffffff; ;
+    padding: 0.625rem 1.25rem;
 }
 
 .btn{
@@ -188,13 +194,11 @@ p{
     background: #13abe7da;
 }
 
-
-
-@media (max-width: 769px){
+@media (max-width: 1090px){
 
     p{
     margin-bottom: 40px;
-    font-size: 22px;
+    font-size: 100px;
     color: #000000;
     padding: 20px;
     align-items: center;

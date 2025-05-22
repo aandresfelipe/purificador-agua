@@ -61,7 +61,7 @@ p{
 
 .header {
     height: 70vh !important;
-    background: url(img/FONDo.jpg) no-repeat center center;
+    background: url(img/fonz.avif) no-repeat center center;
     background-size: cover;
     margin-bottom: 60px;
     margin-left: 20px;
@@ -93,16 +93,16 @@ p{
     margin-right: 100px;
 }
 
-.title2{
+.title1{
     font-weight: 550;
     font-size: 30px;
-    margin-top: 600px;
+    margin-top: 800px;
     margin-right: 200px;
     background-color: #31bef5a7;  
     padding: 7px 20px;         
     border-radius: 10px;        
     max-width: 600px;           
-    margin: 20px auto;          
+    margin: 10px auto;          
     box-shadow: 0 4px 10px rgba(98, 232, 255, 0.359); 
     color: #ffffff;
 }
@@ -192,6 +192,24 @@ p{
     color: white;
     text-decoration: none;
     background: #13abe7da;
+}
+
+.tabla {
+    align-items: left;
+    font-size: 20px;
+}
+
+.introduccion{
+    font-size: 25px;
+    margin-top: 25px;
+    font-weight: 530;
+    margin-bottom: 100px;
+    background-color: #ffffffa7;  
+    padding: 7px 20px;         
+    border-radius: 10px;        
+    max-width: 600px;           
+    margin: 20px auto;   
+    align-items: center;      
 }
 
 @media (max-width: 1090px){

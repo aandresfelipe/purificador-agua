@@ -9,7 +9,7 @@
 body{
     text-align: center;
     font-family: "Lato", sans-serif;
-    background-color: #f0f0f0; 
+    background-color: #ffffff; 
 }
 
 .btn{
@@ -85,6 +85,37 @@ body{
 }
 
 .content2{
+
+    padding-top: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-left: 20px; /*Este se puede borrar*/
+    margin-right: 20px; /*Este se puede borrar*/
+
+}
+
+.quienes{
+    font-size: 20px;
+    color: #000000;
+    text-align: center;
+    margin-top: 0px;
+    padding: 10px 1px;
+    margin-left: 0px;
+    margin-right: 20px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+/*
+.content2{
     height: 20vh !important;
     padding-top: 300px;
     padding-left: 500px;
@@ -114,7 +145,7 @@ body{
     margin-left: 25px; ;
     
 }
-
+*/
 .nav_list{
     display: flex;
     list-style: none;
@@ -162,6 +193,8 @@ body{
     background-color: #ffffff; ;
     padding: 0.625rem 1.25rem;
 }
+
+
 
 /* Compatibilidad Celular */
 @media (max-width: 769px){

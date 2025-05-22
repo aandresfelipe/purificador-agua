@@ -3,19 +3,28 @@
 #include <DallasTemperature.h>
 #include <WiFi.h>
 #include <WebServer.h>
+#include <Adafruit_GFX.h>
+#include <Adafruit_ST7735.h>
+#include <SPI.h>
 
 //configuración de internet
-const char* ssid = "FAMILIAHUELGOS";
-const char* password = "3156849165";
+const char* ssid = "WUSTA";
+const char* password = "USTA8600";
 
 //libreria Web y definicion del puerto
 WebServer server(80);
 
 //Pines y configuracion
-#define PIN_TEMP 4  //sensor de temperatura
-#define PIN_PH 34   //sensor de ph
-#define PIN_LED 0   //luz uv
+#define TFT_CS    -1
+#define TFT_RST    4
+#define TFT_DC     2
+#define TFT_SCLK  18
+#define TFT_MOSI  23
+#define PIN_TEMP 0  //sensor de temperatura
+#define PIN_PH 33   //sensor de ph
+#define PIN_LED 15  //luz uv
 //#define PIN_TURB 17 //sensor de turbidez
+Adafruit_ST7735 tft = Adafruit_ST7735(TFT_CS, TFT_DC, TFT_RST);
 
 //libreria onewire para el sensor de temperatura
 OneWire  oneWire (PIN_TEMP);
@@ -32,6 +41,13 @@ void setup(){
   sensors.begin();             //iniciar pines
   pinMode(PIN_LED, OUTPUT);    //establece led como salida
   digitalWrite(PIN_LED, LOW);  //establece luz uv apagado por defecto
+
+   // Pantalla TFT
+  tft.initR(INITR_MINI160x80);
+  tft.setRotation(1);
+  tft.fillScreen(ST77XX_BLACK);
+  tft.setTextColor(ST77XX_WHITE);
+  tft.setTextSize(2);
 
   //WiFi configuracion interna
   WiFi.begin(ssid, password);
@@ -124,15 +140,20 @@ void loop(){
   Serial.println(" V");
 
   //evaluacion de calidad de agua
-  if(aguaSegura){
-    Serial.println("ESTADO DEL AGUA: SEGURA");
-    digitalWrite(PIN_LED, LOW);
-  }else{
-    Serial.println("ESTADO DEL AGUA: NO SEGURA ---- ACTIVANDO PURIFICACION");
+ tft.fillScreen(ST77XX_BLACK);
+  tft.setCursor(0, 0);
+  tft.setTextColor(ST77XX_CYAN);
+  tft.print("PH: "); tft.println(ph, 2);
+  tft.print("Temp: "); tft.print(temperatura, 2); tft.println(" C");
+
+  if (aguaSegura) {
+    tft.setTextColor(ST77XX_BLUE);
+    tft.println("AGUA SEGURA");
+  } else {
+    tft.setTextColor(ST77XX_YELLOW);
+    tft.println("PURIFICANDO...");
     digitalWrite(PIN_LED, HIGH);
   }
-
-  Serial.println("------------------------");
   delay(5000); //espera de 5 segundos
 }
 

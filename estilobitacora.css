@@ -200,7 +200,7 @@ p{
 }
 
 .introduccion{
-    font-size: 25px;
+    font-size: 105px;
     margin-top: 25px;
     font-weight: 530;
     margin-bottom: 100px;
@@ -306,4 +306,27 @@ p{
     height: 10px;
     display: none;
     }
+
+    .introduccion{
+    font-size: 10px;
+    margin-top: 25px;
+    font-weight: 400;
+    margin-bottom: 100px;
+    background-color: #ffffffa7;  
+    padding: 7px 20px;         
+    border-radius: 10px;        
+    max-width: 600px;           
+    margin: 20px auto;   
+    align-items: center;
+    
+    p{
+    margin-bottom: 40px;
+    font-size: 25px;
+    color: #000000;
+    padding: 20 80px;
+    align-items: center;
+    margin-right: 15px;
+    margin-left: 15px;
+}
+}
 }

@@ -124,7 +124,7 @@ body{
 
 .title4{
     margin-bottom: 2.5rem;
-    font-size: 3.125rem;
+    font-size: 1rem;
     font-weight: 530;
     text-transform: uppercase;
     color: rgb(255, 255, 255);
@@ -418,4 +418,5 @@ p{
     height: 10px;
     display: none;
     }
+
 }
